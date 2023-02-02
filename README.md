@@ -10,8 +10,8 @@ Communication between Client and Server using RSA algorithm
 !pip install rsa
 
 Steps:
-Import all the above libraries
-At first, create a folder named Keys to store generated RSA keys.
-Then, to generate keys, Run python keygeneration.py
-Now, to create connection between server and client, run both server and client file simultaneously
-Then, enjoy communicating :) .
+1. Import all the above libraries
+2. At first, create a folder named Keys to store generated RSA keys.
+3. Then, to generate keys, Run python keygeneration.py
+4. Now, to create connection between server and client, run both server and client file simultaneously
+5. Then, enjoy communicating :) .
