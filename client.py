@@ -30,7 +30,6 @@ def client_program(message, pubKey, priKey):
 
     client_socket.close()  # close the connection
 
-
 if __name__ == '__main__':
     message = input(str("Enter message you want to send... \n"))
     publicKey = load_public_keys()

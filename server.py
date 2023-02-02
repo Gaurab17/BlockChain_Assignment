@@ -16,7 +16,6 @@ def server_program(priKey, pubKey):
     port = 5000  # initiate port no above 1024
 
     server_socket = socket.socket()  # get instance
-    # look closely. The bind() function takes tuple as argument
     server_socket.bind((host, port))  # bind host address and port together
 
     # configure how many client the server can listen simultaneously
@@ -43,5 +42,3 @@ if __name__ == '__main__':
     privateKey = load_private_keys()
     publicKey = load_public_keys()
     server_program(privateKey, publicKey)
-
-    
