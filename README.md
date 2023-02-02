@@ -4,10 +4,10 @@ Communication between Client and Server using RSA algorithm
 
 #Import Libraries
 
-!pip install cryptography
-!pip install pycryptodome
-!pip install kerberos
-!pip install rsa
+1. !pip install cryptography
+2. !pip install pycryptodome
+3. !pip install kerberos
+4. !pip install rsa
 
 Steps:
 1. Import all the above libraries
