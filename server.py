@@ -14,7 +14,6 @@ def load_public_keys():
 def server_program(priKey, pubKey):
     host = socket.gethostname()  # get the hostname
     port = 5001  # initiate port no above 1024
-
     server_socket = socket.socket()  # get instance
     server_socket.bind((host, port))  # bind host address and port together
 

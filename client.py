@@ -12,11 +12,12 @@ def load_private_keys():
     return private_key
 
 def client_program(message, pubKey, priKey):
-    host = socket.gethostname()  # as both code is running on same pc
+    host = socket.gethostname()  
     port = 5001  # socket server port number
 
     client_socket = socket.socket()  # instantiate
-    client_socket.connect((host, port))  # connect to the server
+     # connect to the server
+    client_socket.connect((host, port)) 
 
     while message.lower().strip() != 'bye':
         encryptMessage = rsa.encrypt(message.encode(), pubKey)
@@ -26,7 +27,8 @@ def client_program(message, pubKey, priKey):
         decryptMessage = rsa.decrypt(data, priKey).decode()
         print('Server: ' + str(decryptMessage)) 
 
-        message = input("Send Message, Client ->")  # again take input
+         # again take input
+        message = input("Send Message, Client ->") 
 
     client_socket.close()  # close the connection
     return message
