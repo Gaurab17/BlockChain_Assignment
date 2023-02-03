@@ -13,7 +13,7 @@ def load_public_keys():
 
 def server_program(priKey, pubKey):
     host = socket.gethostname()  # get the hostname
-    port = 5000  # initiate port no above 1024
+    port = 5001  # initiate port no above 1024
 
     server_socket = socket.socket()  # get instance
     server_socket.bind((host, port))  # bind host address and port together
@@ -30,7 +30,7 @@ def server_program(priKey, pubKey):
         if not data:
             break # if data is not received break
 
-        print("from connected user: " + str(decryptMessage))
+        print("Client: " + str(decryptMessage))
     
         msg = input(' Send Message, Server -> ')
         encryptMessage = rsa.encrypt(msg.encode(), pubKey)
